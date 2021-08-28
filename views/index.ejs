@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		p {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+
+<p id="demo">
+</p>
+	</style>
+	<title>
+
+	</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<script type="text/javascript">
+	var countUpDate = new Date("Nov 22, 2019 16:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = now - countUpDate;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = <%=days%>
+  var hours = <%=hours%>
+  var minutes = <%=mins%>
+  var seconds = <%=secs%>
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+<body>
+	<h1> Time since Virat Kohli's last International Century: </h1>
+	<p id="hunds"> Test Hundreds: <%=testHunds%> </br> ODI Hundreds: 43 </br> T20I Hundreds: 0 </p>
+  <p id="tothunds"> Total Hundreds: <%=totalHunds%> </p>
+
+</body>
+</html>

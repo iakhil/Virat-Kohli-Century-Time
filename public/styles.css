@@ -1,0 +1,35 @@
+body 
+{
+	background-color: #100b21;
+	overflow: hidden;
+}
+
+p
+{
+	color: white;
+	font-family: Arial, Verdana, sans-serif;
+}
+h1 
+{
+	position: absolute;	
+	top: 40px;
+	right: 390px;
+	color: yellow;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+
+}
+#demo 
+{
+	margin-top: 250px;
+	font-size: 150px;
+	font-color: #1a9bc9;
+	font-family: cursive, Brush Script MT, sans-serif;
+}
+
+#tothunds 
+{
+	color: #03fc9d;
+	font-size: 80px;
+	font-family: Arial, Verdana, sans-serif;
+}
